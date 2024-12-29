@@ -1,0 +1,922 @@
+ets�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 30 2024 00:29:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27740h (161600) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037768 vaddr=3ffb0000 size=0447ch ( 17532) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003bbec vaddr=40080000 size=0442ch ( 17452) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a23b0h (664496) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e23d8 vaddr=4008442c size=159cch ( 88524) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu start user code[0m
+[0;32mI (470) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (473) app_init: Project name:     heart_beart[0m
+[0;32mI (479) app_init: App version:      1[0m
+[0;32mI (483) app_init: Compile time:     Dec 30 2024 00:28:18[0m
+[0;32mI (489) app_init: ELF file SHA256:  a2686d17d...[0m
+[0;32mI (494) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (500) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (504) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (509) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (521) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB9168 len 00026E98 (155 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 40099DF8 len 00006208 (24 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (561) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (574) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+I (636) wifi:wifi driver task: 3ffc1198, prio:23, stack:6656, core=0
+I (646) wifi:wifi firmware version: ccaebfa
+I (646) wifi:wifi certification version: v7.0
+I (646) wifi:config NVS flash: enabled
+I (646) wifi:config nano formating: disabled
+I (656) wifi:Init data frame dynamic rx buffer num: 32
+I (656) wifi:Init static rx mgmt buffer num: 5
+I (666) wifi:Init management short buffer num: 32
+I (666) wifi:Init dynamic tx buffer num: 32
+I (676) wifi:Init static rx buffer size: 1600
+I (676) wifi:Init static rx buffer num: 10
+I (676) wifi:Init dynamic rx buffer num: 32
+[0;32mI (686) wifi_init: rx ba win: 6[0m
+[0;32mI (686) wifi_init: accept mbox: 6[0m
+[0;32mI (686) wifi_init: tcpip mbox: 32[0m
+[0;32mI (696) wifi_init: udp mbox: 6[0m
+[0;32mI (696) wifi_init: tcp mbox: 6[0m
+[0;32mI (706) wifi_init: tcp tx win: 5760[0m
+[0;32mI (706) wifi_init: tcp rx win: 5760[0m
+[0;32mI (706) wifi_init: tcp mss: 1440[0m
+[0;32mI (716) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (716) wifi_init: WiFi RX IRAM OP enabled[0m
+W (726) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (736) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (816) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (866) wifi:mode : sta (08:d1:f9:27:d9:b4)
+I (866) wifi:enable tsf
+[0;33mW (876) : Write Failed[0m
+I (876) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1, snd_ch_cfg:0x0
+I (886) wifi:state: init -> auth (0xb0)
+[0;33mW (886) : Write Failed[0m
+[0;33mW (886) : Write Failed[0m
+[0;33mW (886) : Write Failed[0m
+[0;33mW (886) : Write Failed[0m
+[0;32mI (896) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (906) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (906) wifi:state: auth -> assoc (0x0)
+[0;32mI (916) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (936) wifi:state: assoc -> run (0x10)
+[0;32mI (1026) SSD1306: SPI HOST_ID=1[0m
+[0;32mI (1026) SSD1306: spi_bus_initialize=0[0m
+[0;32mI (1026) SSD1306: spi_bus_add_device=0[0m
+I (1036) wifi:connected with so12 ngo9, aid = 2, channel 2, BW20, bssid = c8:94:02:03:7c:48
+I (1036) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (1046) wifi:pm start, type: 1
+
+I (1046) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+Connected to Wi-Fi network: so12 ngo9
+I (1086) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1096) main_task: Returned from app_main()[0m
+[0;33mW (1106) : Read failed[0m
+[0;33mW (1136) : Read failed[0m
+[0;33mW (1166) : Read failed[0m
+[0;33mW (1196) : Read failed[0m
+[0;33mW (1226) : Read failed[0m
+[0;33mW (1256) : Read failed[0m
+[0;33mW (1286) : Read failed[0m
+[0;33mW (1316) : Read failed[0m
+[0;33mW (1346) : Read failed[0m
+[0;33mW (1376) : Read failed[0m
+[0;33mW (1406) : Read failed[0m
+[0;33mW (1436) : Read failed[0m
+[0;33mW (1466) : Read failed[0m
+[0;33mW (1496) : Read failed[0m
+[0;33mW (1526) : Read failed[0m
+[0;33mW (1556) : Read failed[0m
+[0;33mW (1586) : Read failed[0m
+[0;33mW (1616) : Read failed[0m
+[0;33mW (1646) : Read failed[0m
+[0;33mW (1676) : Read failed[0m
+[0;33mW (1706) : Read failed[0m
+[0;33mW (1736) : Read failed[0m
+[0;33mW (1766) : Read failed[0m
+[0;33mW (1796) : Read failed[0m
+[0;33mW (1826) : Read failed[0m
+[0;33mW (1856) : Read failed[0m
+[0;33mW (1886) : Read failed[0m
+[0;33mW (1916) : Read failed[0m
+[0;33mW (1946) : Read failed[0m
+[0;33mW (1976) : Read failed[0m
+[0;33mW (2006) : Read failed[0m
+[0;33mW (2036) : Read failed[0m
+[0;32mI (2056) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+Got IP: 192.168.1.10
+[0;33mW (2066) : Read failed[0m
+[0;33mW (2096) : Read failed[0m
+[0;33mW (2126) : Read failed[0m
+[0;33mW (2156) : Read failed[0m
+[0;33mW (2186) : Read failed[0m
+[0;33mW (2216) : Read failed[0m
+[0;33mW (2246) : Read failed[0m
+[0;33mW (2276) : Read failed[0m
+[0;33mW (2306) : Read failed[0m
+[0;33mW (2336) : Read failed[0m
+[0;33mW (2366) : Read failed[0m
+[0;33mW (2396) : Read failed[0m
+[0;33mW (2426) : Read failed[0m
+[0;33mW (2456) : Read failed[0m
+[0;33mW (2486) : Read failed[0m
+[0;33mW (2516) : Read failed[0m
+[0;33mW (2546) : Read failed[0m
+[0;33mW (2576) : Read failed[0m
+[0;33mW (2606) : Read failed[0m
+[0;33mW (2636) : Read failed[0m
+[0;33mW (2666) : Read failed[0m
+[0;33mW (2696) : Read failed[0m
+[0;33mW (2726) : Read failed[0m
+[0;33mW (2756) : Read failed[0m
+[0;33mW (2786) : Read failed[0m
+[0;33mW (2816) : Read failed[0m
+[0;33mW (2846) : Read failed[0m
+[0;33mW (2876) : Read failed[0m
+[0;33mW (2906) : Read failed[0m
+[0;33mW (2936) : Read failed[0m
+[0;33mW (2966) : Read failed[0m
+[0;33mW (2996) : Read failed[0m
+[0;33mW (3026) : Read failed[0m
+[0;33mW (3056) : Read failed[0m
+[0;33mW (3086) : Read failed[0m
+[0;33mW (3116) : Read failed[0m
+[0;33mW (3146) : Read failed[0m
+[0;33mW (3176) : Read failed[0m
+[0;33mW (3206) : Read failed[0m
+[0;33mW (3236) : Read failed[0m
+[0;33mW (3266) : Read failed[0m
+[0;33mW (3296) : Read failed[0m
+[0;33mW (3326) : Read failed[0m
+[0;33mW (3356) : Read failed[0m
+[0;33mW (3386) : Read failed[0m
+[0;33mW (3416) : Read failed[0m
+[0;33mW (3446) : Read failed[0m
+[0;33mW (3476) : Read failed[0m
+[0;33mW (3506) : Read failed[0m
+[0;33mW (3536) : Read failed[0m
+[0;33mW (3566) : Read failed[0m
+[0;33mW (3596) : Read failed[0m
+[0;33mW (3626) : Read failed[0m
+[0;33mW (3656) : Read failed[0m
+[0;33mW (3686) : Read failed[0m
+[0;33mW (3716) : Read failed[0m
+[0;33mW (3746) : Read failed[0m
+[0;33mW (3776) : Read failed[0m
+[0;33mW (3806) : Read failed[0m
+[0;33mW (3836) : Read failed[0m
+[0;33mW (3866) : Read failed[0m
+[0;33mW (3896) : Read failed[0m
+[0;33mW (3926) : Read failed[0m
+[0;33mW (3956) : Read failed[0m
+[0;33mW (3986) : Read failed[0m
+[0;33mW (4016) : Read failed[0m
+[0;33mW (4046) : Read failed[0m
+[0;33mW (4076) : Read failed[0m
+[0;33mW (4106) : Read failed[0m
+[0;33mW (4136) : Read failed[0m
+[0;33mW (4166) : Read failed[0m
+[0;33mW (4196) : Read failed[0m
+[0;33mW (4226) : Read failed[0m
+[0;33mW (4256) : Read failed[0m
+[0;33mW (4286) : Read failed[0m
+[0;33mW (4316) : Read failed[0m
+[0;33mW (4346) : Read failed[0m
+[0;33mW (4376) : Read failed[0m
+[0;33mW (4406) : Read failed[0m
+[0;33mW (4436) : Read failed[0m
+[0;33mW (4466) : Read failed[0m
+[0;33mW (4496) : Read failed[0m
+[0;33mW (4526) : Read failed[0m
+[0;33mW (4556) : Read failed[0m
+[0;33mW (4586) : Read failed[0m
+[0;33mW (4616) : Read failed[0m
+[0;33mW (4646) : Read failed[0m
+[0;33mW (4676) : Read failed[0m
+[0;33mW (4706) : Read failed[0m
+[0;33mW (4736) : Read failed[0m
+[0;33mW (4766) : Read failed[0m
+[0;33mW (4796) : Read failed[0m
+[0;33mW (4826) : Read failed[0m
+[0;33mW (4856) : Read failed[0m
+[0;33mW (4886) : Read failed[0m
+[0;33mW (4916) : Read failed[0m
+[0;33mW (4946) : Read failed[0m
+[0;33mW (4976) : Read failed[0m
+[0;33mW (5006) : Read failed[0m
+[0;33mW (5036) : Read failed[0m
+[0;33mW (5066) : Read failed[0m
+[0;33mW (5096) : Read failed[0m
+[0;33mW (5126) : Read failed[0m
+[0;33mW (5156) : Read failed[0m
+[0;33mW (5186) : Read failed[0m
+[0;33mW (5216) : Read failed[0m
+[0;33mW (5246) : Read failed[0m
+[0;33mW (5276) : Read failed[0m
+[0;33mW (5306) : Read failed[0m
+[0;33mW (5336) : Read failed[0m
+[0;33mW (5366) : Read failed[0m
+[0;33mW (5396) : Read failed[0m
+[0;33mW (5426) : Read failed[0m
+[0;33mW (5456) : Read failed[0m
+[0;33mW (5486) : Read failed[0m
+[0;33mW (5516) : Read failed[0m
+[0;33mW (5546) : Read failed[0m
+[0;33mW (5576) : Read failed[0m
+[0;33mW (5606) : Read failed[0m
+[0;33mW (5636) : Read failed[0m
+[0;33mW (5666) : Read failed[0m
+[0;33mW (5696) : Read failed[0m
+[0;33mW (5726) : Read failed[0m
+[0;33mW (5756) : Read failed[0m
+[0;33mW (5786) : Read failed[0m
+[0;33mW (5816) : Read failed[0m
+[0;33mW (5846) : Read failed[0m
+[0;33mW (5876) : Read failed[0m
+[0;33mW (5906) : Read failed[0m
+[0;33mW (5936) : Read failed[0m
+[0;33mW (5966) : Read failed[0m
+[0;33mW (5996) : Read failed[0m
+[0;33mW (6026) : Read failed[0m
+[0;33mW (6056) : Read failed[0m
+[0;33mW (6086) : Read failed[0m
+[0;33mW (6116) : Read failed[0m
+[0;33mW (6146) : Read failed[0m
+[0;33mW (6176) : Read failed[0m
+[0;33mW (6206) : Read failed[0m
+[0;33mW (6236) : Read failed[0m
+[0;33mW (6266) : Read failed[0m
+[0;33mW (6296) : Read failed[0m
+[0;33mW (6326) : Read failed[0m
+[0;33mW (6356) : Read failed[0m
+[0;33mW (6386) : Read failed[0m
+[0;33mW (6416) : Read failed[0m
+[0;33mW (6446) : Read failed[0m
+[0;33mW (6476) : Read failed[0m
+[0;33mW (6506) : Read failed[0m
+[0;33mW (6536) : Read failed[0m
+[0;33mW (6566) : Read failed[0m
+[0;33mW (6596) : Read failed[0m
+[0;33mW (6626) : Read failed[0m
+[0;33mW (6656) : Read failed[0m
+[0;33mW (6686) : Read failed[0m
+[0;33mW (6716) : Read failed[0m
+[0;33mW (6746) : Read failed[0m
+[0;33mW (6776) : Read failed[0m
+[0;33mW (6806) : Read failed[0m
+[0;33mW (6836) : Read failed[0m
+[0;33mW (6866) : Read failed[0m
+[0;33mW (6896) : Read failed[0m
+[0;33mW (6926) : Read failed[0m
+[0;33mW (6956) : Read failed[0m
+[0;33mW (6986) : Read failed[0m
+[0;33mW (7016) : Read failed[0m
+[0;33mW (7046) : Read failed[0m
+[0;33mW (7076) : Read failed[0m
+[0;33mW (7106) : Read failed[0m
+[0;33mW (7136) : Read failed[0m
+[0;33mW (7166) : Read failed[0m
+[0;33mW (7196) : Read failed[0m
+[0;33mW (7226) : Read failed[0m
+[0;33mW (7256) : Read failed[0m
+[0;33mW (7286) : Read failed[0m
+[0;33mW (7316) : Read failed[0m
+[0;33mW (7346) : Read failed[0m
+[0;33mW (7376) : Read failed[0m
+[0;33mW (7406) : Read failed[0m
+[0;33mW (7436) : Read failed[0m
+[0;33mW (7466) : Read failed[0m
+[0;33mW (7496) : Read failed[0m
+[0;33mW (7526) : Read failed[0m
+[0;33mW (7556) : Read failed[0m
+[0;33mW (7586) : Read failed[0m
+[0;33mW (7616) : Read failed[0m
+[0;33mW (7646) : Read failed[0m
+[0;33mW (7676) : Read failed[0m
+[0;33mW (7706) : Read failed[0m
+[0;33mW (7736) : Read failed[0m
+[0;33mW (7766) : Read failed[0m
+[0;33mW (7796) : Read failed[0m
+[0;33mW (7826) : Read failed[0m
+[0;33mW (7856) : Read failed[0m
+[0;33mW (7886) : Read failed[0m
+[0;33mW (7916) : Read failed[0m
+[0;33mW (7946) : Read failed[0m
+[0;33mW (7976) : Read failed[0m
+[0;33mW (8006) : Read failed[0m
+[0;33mW (8036) : Read failed[0m
+[0;33mW (8066) : Read failed[0m
+[0;33mW (8096) : Read failed[0m
+[0;33mW (8126) : Read failed[0m
+[0;33mW (8156) : Read failed[0m
+[0;33mW (8186) : Read failed[0m
+[0;33mW (8216) : Read failed[0m
+[0;33mW (8246) : Read failed[0m
+[0;33mW (8276) : Read failed[0m
+[0;33mW (8306) : Read failed[0m
+[0;33mW (8336) : Read failed[0m
+[0;33mW (8366) : Read failed[0m
+[0;33mW (8396) : Read failed[0m
+[0;33mW (8426) : Read failed[0m
+[0;33mW (8456) : Read failed[0m
+[0;33mW (8486) : Read failed[0m
+[0;33mW (8516) : Read failed[0m
+[0;33mW (8546) : Read failed[0m
+[0;33mW (8576) : Read failed[0m
+[0;33mW (8606) : Read failed[0m
+[0;33mW (8636) : Read failed[0m
+[0;33mW (8666) : Read failed[0m
+[0;33mW (8696) : Read failed[0m
+[0;33mW (8726) : Read failed[0m
+[0;33mW (8756) : Read failed[0m
+[0;33mW (8786) : Read failed[0m
+[0;33mW (8816) : Read failed[0m
+[0;33mW (8846) : Read failed[0m
+[0;33mW (8876) : Read failed[0m
+[0;33mW (8906) : Read failed[0m
+[0;33mW (8936) : Read failed[0m
+[0;33mW (8966) : Read failed[0m
+[0;33mW (8996) : Read failed[0m
+[0;33mW (9026) : Read failed[0m
+[0;33mW (9056) : Read failed[0m
+[0;33mW (9086) : Read failed[0m
+[0;33mW (9116) : Read failed[0m
+[0;33mW (9146) : Read failed[0m
+[0;33mW (9176) : Read failed[0m
+[0;33mW (9206) : Read failed[0m
+[0;33mW (9236) : Read failed[0m
+[0;33mW (9266) : Read failed[0m
+[0;33mW (9296) : Read failed[0m
+[0;33mW (9326) : Read failed[0m
+[0;33mW (9356) : Read failed[0m
+[0;33mW (9386) : Read failed[0m
+[0;33mW (9416) : Read failed[0m
+[0;33mW (9446) : Read failed[0m
+[0;33mW (9476) : Read failed[0m
+[0;33mW (9506) : Read failed[0m
+[0;33mW (9536) : Read failed[0m
+[0;33mW (9566) : Read failed[0m
+[0;33mW (9596) : Read failed[0m
+[0;33mW (9626) : Read failed[0m
+[0;33mW (9656) : Read failed[0m
+[0;33mW (9686) : Read failed[0m
+[0;33mW (9716) : Read failed[0m
+[0;33mW (9746) : Read failed[0m
+[0;33mW (9776) : Read failed[0m
+[0;33mW (9806) : Read failed[0m
+[0;33mW (9836) : Read failed[0m
+[0;33mW (9866) : Read failed[0m
+[0;33mW (9896) : Read failed[0m
+[0;33mW (9926) : Read failed[0m
+[0;33mW (9956) : Read failed[0m
+[0;33mW (9986) : Read failed[0m
+[0;33mW (10016) : Read failed[0m
+[0;33mW (10046) : Read failed[0m
+[0;33mW (10076) : Read failed[0m
+[0;33mW (10106) : Read failed[0m
+[0;33mW (10136) : Read failed[0m
+[0;33mW (10166) : Read failed[0m
+[0;33mW (10196) : Read failed[0m
+[0;33mW (10226) : Read failed[0m
+[0;33mW (10256) : Read failed[0m
+[0;33mW (10286) : Read failed[0m
+[0;33mW (10316) : Read failed[0m
+[0;33mW (10346) : Read failed[0m
+[0;33mW (10376) : Read failed[0m
+[0;33mW (10406) : Read failed[0m
+[0;33mW (10436) : Read failed[0m
+[0;33mW (10466) : Read failed[0m
+[0;33mW (10496) : Read failed[0m
+[0;33mW (10526) : Read failed[0m
+[0;33mW (10556) : Read failed[0m
+[0;33mW (10586) : Read failed[0m
+[0;33mW (10616) : Read failed[0m
+[0;33mW (10646) : Read failed[0m
+[0;33mW (10676) : Read failed[0m
+[0;33mW (10706) : Read failed[0m
+[0;33mW (10736) : Read failed[0m
+[0;33mW (10766) : Read failed[0m
+[0;33mW (10796) : Read failed[0m
+[0;33mW (10826) : Read failed[0m
+[0;33mW (10856) : Read failed[0m
+[0;33mW (10886) : Read failed[0m
+[0;33mW (10916) : Read failed[0m
+[0;33mW (10946) : Read failed[0m
+[0;33mW (10976) : Read failed[0m
+[0;33mW (11006) : Read failed[0m
+[0;33mW (11036) : Read failed[0m
+[0;33mW (11066) : Read failed[0m
+[0;33mW (11096) : Read failed[0m
+[0;33mW (11126) : Read failed[0m
+[0;33mW (11156) : Read failed[0m
+[0;33mW (11186) : Read failed[0m
+[0;33mW (11216) : Read failed[0m
+[0;33mW (11246) : Read failed[0m
+[0;33mW (11276) : Read failed[0m
+[0;33mW (11306) : Read failed[0m
+[0;33mW (11336) : Read failed[0m
+[0;33mW (11366) : Read failed[0m
+[0;33mW (11396) : Read failed[0m
+[0;33mW (11426) : Read failed[0m
+[0;33mW (11456) : Read failed[0m
+[0;33mW (11486) : Read failed[0m
+[0;33mW (11516) : Read failed[0m
+[0;33mW (11546) : Read failed[0m
+[0;33mW (11576) : Read failed[0m
+[0;33mW (11606) : Read failed[0m
+[0;33mW (11636) : Read failed[0m
+[0;33mW (11666) : Read failed[0m
+[0;33mW (11696) : Read failed[0m
+[0;33mW (11726) : Read failed[0m
+[0;33mW (11756) : Read failed[0m
+[0;33mW (11786) : Read failed[0m
+[0;33mW (11816) : Read failed[0m
+[0;33mW (11846) : Read failed[0m
+[0;33mW (11876) : Read failed[0m
+[0;33mW (11906) : Read failed[0m
+[0;33mW (11936) : Read failed[0m
+[0;33mW (11966) : Read failed[0m
+[0;33mW (11996) : Read failed[0m
+[0;33mW (12026) : Read failed[0m
+[0;33mW (12056) : Read failed[0m
+[0;33mW (12086) : Read failed[0m
+[0;33mW (12116) : Read failed[0m
+[0;33mW (12146) : Read failed[0m
+[0;33mW (12176) : Read failed[0m
+[0;33mW (12206) : Read failed[0m
+[0;33mW (12236) : Read failed[0m
+[0;33mW (12266) : Read failed[0m
+[0;33mW (12296) : Read failed[0m
+[0;33mW (12326) : Read failed[0m
+[0;33mW (12356) : Read failed[0m
+[0;33mW (12386) : Read failed[0m
+[0;33mW (12416) : Read failed[0m
+[0;33mW (12446) : Read failed[0m
+[0;33mW (12476) : Read failed[0m
+[0;33mW (12506) : Read failed[0m
+[0;33mW (12536) : Read failed[0m
+[0;33mW (12566) : Read failed[0m
+[0;33mW (12596) : Read failed[0m
+[0;33mW (12626) : Read failed[0m
+[0;33mW (12656) : Read failed[0m
+[0;33mW (12686) : Read failed[0m
+[0;33mW (12716) : Read failed[0m
+[0;33mW (12746) : Read failed[0m
+[0;33mW (12776) : Read failed[0m
+[0;33mW (12806) : Read failed[0m
+[0;33mW (12836) : Read failed[0m
+[0;33mW (12866) : Read failed[0m
+[0;33mW (12896) : Read failed[0m
+[0;33mW (12926) : Read failed[0m
+[0;33mW (12956) : Read failed[0m
+[0;33mW (12986) : Read failed[0m
+[0;33mW (13016) : Read failed[0m
+[0;33mW (13046) : Read failed[0m
+[0;33mW (13076) : Read failed[0m
+[0;33mW (13106) : Read failed[0m
+[0;33mW (13136) : Read failed[0m
+[0;33mW (13166) : Read failed[0m
+[0;33mW (13196) : Read failed[0m
+[0;33mW (13226) : Read failed[0m
+[0;33mW (13256) : Read failed[0m
+[0;33mW (13286) : Read failed[0m
+[0;33mW (13316) : Read failed[0m
+[0;33mW (13346) : Read failed[0m
+[0;33mW (13376) : Read failed[0m
+[0;33mW (13406) : Read failed[0m
+[0;33mW (13436) : Read failed[0m
+[0;33mW (13466) : Read failed[0m
+[0;33mW (13496) : Read failed[0m
+[0;33mW (13526) : Read failed[0m
+[0;33mW (13556) : Read failed[0m
+[0;33mW (13586) : Read failed[0m
+[0;33mW (13616) : Read failed[0m
+[0;33mW (13646) : Read failed[0m
+[0;33mW (13676) : Read failed[0m
+[0;33mW (13706) : Read failed[0m
+[0;33mW (13736) : Read failed[0m
+[0;33mW (13766) : Read failed[0m
+[0;33mW (13796) : Read failed[0m
+[0;33mW (13826) : Read failed[0m
+[0;33mW (13856) : Read failed[0m
+[0;33mW (13886) : Read failed[0m
+[0;33mW (13916) : Read failed[0m
+[0;33mW (13946) : Read failed[0m
+[0;33mW (13976) : Read failed[0m
+[0;33mW (14006) : Read failed[0m
+[0;33mW (14036) : Read failed[0m
+[0;33mW (14066) : Read failed[0m
+[0;33mW (14096) : Read failed[0m
+[0;33mW (14126) : Read failed[0m
+[0;33mW (14156) : Read failed[0m
+[0;33mW (14186) : Read failed[0m
+[0;33mW (14216) : Read failed[0m
+[0;33mW (14246) : Read failed[0m
+[0;33mW (14276) : Read failed[0m
+[0;33mW (14306) : Read failed[0m
+[0;33mW (14336) : Read failed[0m
+[0;33mW (14366) : Read failed[0m
+[0;33mW (14396) : Read failed[0m
+[0;33mW (14426) : Read failed[0m
+[0;33mW (14456) : Read failed[0m
+[0;33mW (14486) : Read failed[0m
+[0;33mW (14516) : Read failed[0m
+[0;33mW (14546) : Read failed[0m
+[0;33mW (14576) : Read failed[0m
+[0;33mW (14606) : Read failed[0m
+[0;33mW (14636) : Read failed[0m
+[0;33mW (14666) : Read failed[0m
+[0;33mW (14696) : Read failed[0m
+[0;33mW (14726) : Read failed[0m
+[0;33mW (14756) : Read failed[0m
+[0;33mW (14786) : Read failed[0m
+[0;33mW (14816) : Read failed[0m
+[0;33mW (14846) : Read failed[0m
+[0;33mW (14876) : Read failed[0m
+[0;33mW (14906) : Read failed[0m
+[0;33mW (14936) : Read failed[0m
+[0;33mW (14966) : Read failed[0m
+[0;33mW (14996) : Read failed[0m
+[0;33mW (15026) : Read failed[0m
+[0;33mW (15056) : Read failed[0m
+[0;33mW (15086) : Read failed[0m
+[0;33mW (15116) : Read failed[0m
+[0;33mW (15146) : Read failed[0m
+[0;33mW (15176) : Read failed[0m
+[0;33mW (15206) : Read failed[0m
+[0;33mW (15236) : Read failed[0m
+[0;33mW (15266) : Read failed[0m
+[0;33mW (15296) : Read failed[0m
+[0;33mW (15326) : Read failed[0m
+[0;33mW (15356) : Read failed[0m
+[0;33mW (15386) : Read failed[0m
+[0;33mW (15416) : Read failed[0m
+[0;33mW (15446) : Read failed[0m
+[0;33mW (15476) : Read failed[0m
+[0;33mW (15506) : Read failed[0m
+[0;33mW (15536) : Read failed[0m
+[0;33mW (15566) : Read failed[0m
+[0;33mW (15596) : Read failed[0m
+[0;33mW (15626) : Read failed[0m
+[0;33mW (15656) : Read failed[0m
+[0;33mW (15686) : Read failed[0m
+[0;33mW (15716) : Read failed[0m
+[0;33mW (15746) : Read failed[0m
+[0;33mW (15776) : Read failed[0m
+[0;33mW (15806) : Read failed[0m
+[0;33mW (15836) : Read failed[0m
+[0;33mW (15866) : Read failed[0m
+[0;33mW (15896) : Read failed[0m
+[0;33mW (15926) : Read failed[0m
+[0;33mW (15956) : Read failed[0m
+[0;33mW (15986) : Read failed[0m
+[0;33mW (16016) : Read failed[0m
+[0;33mW (16046) : Read failed[0m
+[0;33mW (16076) : Read failed[0m
+[0;33mW (16106) : Read failed[0m
+[0;33mW (16136) : Read failed[0m
+[0;33mW (16166) : Read failed[0m
+[0;33mW (16196) : Read failed[0m
+[0;33mW (16226) : Read failed[0m
+[0;33mW (16256) : Read failed[0m
+[0;33mW (16286) : Read failed[0m
+[0;33mW (16316) : Read failed[0m
+[0;33mW (16346) : Read failed[0m
+[0;33mW (16376) : Read failed[0m
+[0;33mW (16406) : Read failed[0m
+[0;33mW (16436) : Read failed[0m
+[0;33mW (16466) : Read failed[0m
+[0;33mW (16496) : Read failed[0m
+[0;33mW (16526) : Read failed[0m
+[0;33mW (16556) : Read failed[0m
+[0;33mW (16586) : Read failed[0m
+[0;33mW (16616) : Read failed[0m
+[0;33mW (16646) : Read failed[0m
+[0;33mW (16676) : Read failed[0m
+[0;33mW (16706) : Read failed[0m
+[0;33mW (16736) : Read failed[0m
+[0;33mW (16766) : Read failed[0m
+[0;33mW (16796) : Read failed[0m
+[0;33mW (16826) : Read failed[0m
+[0;33mW (16856) : Read failed[0m
+[0;33mW (16886) : Read failed[0m
+[0;33mW (16916) : Read failed[0m
+[0;33mW (16946) : Read failed[0m
+[0;33mW (16976) : Read failed[0m
+[0;33mW (17006) : Read failed[0m
+[0;33mW (17036) : Read failed[0m
+[0;33mW (17066) : Read failed[0m
+[0;33mW (17096) : Read failed[0m
+[0;33mW (17126) : Read failed[0m
+[0;33mW (17156) : Read failed[0m
+[0;33mW (17186) : Read failed[0m
+[0;33mW (17216) : Read failed[0m
+[0;33mW (17246) : Read failed[0m
+[0;33mW (17276) : Read failed[0m
+[0;33mW (17306) : Read failed[0m
+[0;33mW (17336) : Read failed[0m
+[0;33mW (17366) : Read failed[0m
+[0;33mW (17396) : Read failed[0m
+[0;33mW (17426) : Read failed[0m
+[0;33mW (17456) : Read failed[0m
+[0;33mW (17486) : Read failed[0m
+[0;33mW (17516) : Read failed[0m
+[0;33mW (17546) : Read failed[0m
+[0;33mW (17576) : Read failed[0m
+[0;33mW (17606) : Read failed[0m
+[0;33mW (17636) : Read failed[0m
+[0;33mW (17666) : Read failed[0m
+[0;33mW (17696) : Read failed[0m
+[0;33mW (17726) : Read failed[0m
+[0;33mW (17756) : Read failed[0m
+[0;33mW (17786) : Read failed[0m
+[0;33mW (17816) : Read failed[0m
+[0;33mW (17846) : Read failed[0m
+[0;33mW (17876) : Read failed[0m
+[0;33mW (17906) : Read failed[0m
+[0;33mW (17936) : Read failed[0m
+[0;33mW (17966) : Read failed[0m
+[0;33mW (17996) : Read failed[0m
+[0;33mW (18026) : Read failed[0m
+[0;33mW (18056) : Read failed[0m
+[0;33mW (18086) : Read failed[0m
+[0;33mW (18116) : Read failed[0m
+[0;33mW (18146) : Read failed[0m
+[0;33mW (18176) : Read failed[0m
+[0;33mW (18206) : Read failed[0m
+[0;33mW (18236) : Read failed[0m
+[0;33mW (18266) : Read failed[0m
+[0;33mW (18296) : Read failed[0m
+[0;33mW (18326) : Read failed[0m
+[0;33mW (18356) : Read failed[0m
+[0;33mW (18386) : Read failed[0m
+[0;33mW (18416) : Read failed[0m
+[0;33mW (18446) : Read failed[0m
+[0;33mW (18476) : Read failed[0m
+[0;33mW (18506) : Read failed[0m
+[0;33mW (18536) : Read failed[0m
+[0;33mW (18566) : Read failed[0m
+[0;33mW (18596) : Read failed[0m
+[0;33mW (18626) : Read failed[0m
+[0;33mW (18656) : Read failed[0m
+[0;33mW (18686) : Read failed[0m
+[0;33mW (18716) : Read failed[0m
+[0;33mW (18746) : Read failed[0m
+[0;33mW (18776) : Read failed[0m
+[0;33mW (18806) : Read failed[0m
+[0;33mW (18836) : Read failed[0m
+[0;33mW (18866) : Read failed[0m
+[0;33mW (18896) : Read failed[0m
+[0;33mW (18926) : Read failed[0m
+[0;33mW (18956) : Read failed[0m
+[0;33mW (18986) : Read failed[0m
+[0;33mW (19016) : Read failed[0m
+[0;33mW (19046) : Read failed[0m
+[0;33mW (19076) : Read failed[0m
+[0;33mW (19106) : Read failed[0m
+[0;33mW (19136) : Read failed[0m
+[0;33mW (19166) : Read failed[0m
+[0;33mW (19196) : Read failed[0m
+[0;33mW (19226) : Read failed[0m
+[0;33mW (19256) : Read failed[0m
+[0;33mW (19286) : Read failed[0m
+[0;33mW (19316) : Read failed[0m
+[0;33mW (19346) : Read failed[0m
+[0;33mW (19376) : Read failed[0m
+[0;33mW (19406) : Read failed[0m
+[0;33mW (19436) : Read failed[0m
+[0;33mW (19466) : Read failed[0m
+[0;33mW (19496) : Read failed[0m
+[0;33mW (19526) : Read failed[0m
+[0;33mW (19556) : Read failed[0m
+[0;33mW (19586) : Read failed[0m
+[0;33mW (19616) : Read failed[0m
+[0;33mW (19646) : Read failed[0m
+[0;33mW (19676) : Read failed[0m
+[0;33mW (19706) : Read failed[0m
+[0;33mW (19736) : Read failed[0m
+[0;33mW (19766) : Read failed[0m
+[0;33mW (19796) : Read failed[0m
+[0;33mW (19826) : Read failed[0m
+[0;33mW (19856) : Read failed[0m
+[0;33mW (19886) : Read failed[0m
+[0;33mW (19916) : Read failed[0m
+[0;33mW (19946) : Read failed[0m
+[0;33mW (19976) : Read failed[0m
+[0;33mW (20006) : Read failed[0m
+[0;33mW (20036) : Read failed[0m
+[0;33mW (20066) : Read failed[0m
+[0;33mW (20096) : Read failed[0m
+[0;33mW (20126) : Read failed[0m
+[0;33mW (20156) : Read failed[0m
+[0;33mW (20186) : Read failed[0m
+[0;33mW (20216) : Read failed[0m
+[0;33mW (20246) : Read failed[0m
+[0;33mW (20276) : Read failed[0m
+[0;33mW (20306) : Read failed[0m
+[0;33mW (20336) : Read failed[0m
+[0;33mW (20366) : Read failed[0m
+[0;33mW (20396) : Read failed[0m
+[0;33mW (20426) : Read failed[0m
+[0;33mW (20456) : Read failed[0m
+[0;33mW (20486) : Read failed[0m
+[0;33mW (20516) : Read failed[0m
+[0;33mW (20546) : Read failed[0m
+[0;33mW (20576) : Read failed[0m
+[0;33mW (20606) : Read failed[0m
+[0;33mW (20636) : Read failed[0m
+[0;33mW (20666) : Read failed[0m
+[0;33mW (20696) : Read failed[0m
+[0;33mW (20726) : Read failed[0m
+[0;33mW (20756) : Read failed[0m
+[0;33mW (20786) : Read failed[0m
+[0;33mW (20816) : Read failed[0m
+[0;33mW (20846) : Read failed[0m
+[0;33mW (20876) : Read failed[0m
+[0;33mW (20906) : Read failed[0m
+[0;33mW (20936) : Read failed[0m
+[0;33mW (20966) : Read failed[0m
+[0;33mW (20996) : Read failed[0m
+[0;33mW (21026) : Read failed[0m
+[0;33mW (21056) : Read failed[0m
+[0;33mW (21086) : Read failed[0m
+[0;33mW (21116) : Read failed[0m
+[0;33mW (21146) : Read failed[0m
+[0;33mW (21176) : Read failed[0m
+[0;33mW (21206) : Read failed[0m
+[0;33mW (21236) : Read failed[0m
+[0;33mW (21266) : Read failed[0m
+[0;33mW (21296) : Read failed[0m
+[0;33mW (21326) : Read failed[0m
+[0;33mW (21356) : Read failed[0m
+[0;33mW (21386) : Read failed[0m
+[0;33mW (21416) : Read failed[0m
+[0;33mW (21446) : Read failed[0m
+[0;33mW (21476) : Read failed[0m
+[0;33mW (21506) : Read failed[0m
+[0;33mW (21536) : Read failed[0m
+[0;33mW (21566) : Read failed[0m
+[0;33mW (21596) : Read failed[0m
+[0;33mW (21626) : Read failed[0m
+[0;33mW (21656) : Read failed[0m
+[0;33mW (21686) : Read failed[0m
+[0;33mW (21716) : Read failed[0m
+[0;33mW (21746) : Read failed[0m
+[0;33mW (21776) : Read failed[0m
+[0;33mW (21806) : Read failed[0m
+[0;33mW (21836) : Read failed[0m
+[0;33mW (21866) : Read failed[0m
+[0;33mW (21896) : Read failed[0m
+[0;33mW (21926) : Read failed[0m
+[0;33mW (21956) : Read failed[0m
+[0;33mW (21986) : Read failed[0m
+[0;33mW (22016) : Read failed[0m
+[0;33mW (22046) : Read failed[0m
+[0;33mW (22076) : Read failed[0m
+[0;33mW (22106) : Read failed[0m
+[0;33mW (22136) : Read failed[0m
+[0;33mW (22166) : Read failed[0m
+[0;33mW (22196) : Read failed[0m
+[0;33mW (22226) : Read failed[0m
+[0;33mW (22256) : Read failed[0m
+[0;33mW (22286) : Read failed[0m
+[0;33mW (22316) : Read failed[0m
+[0;33mW (22346) : Read failed[0m
+[0;33mW (22376) : Read failed[0m
+[0;33mW (22406) : Read failed[0m
+[0;33mW (22436) : Read failed[0m
+[0;33mW (22466) : Read failed[0m
+[0;33mW (22496) : Read failed[0m
+[0;33mW (22526) : Read failed[0m
+[0;33mW (22556) : Read failed[0m
+[0;33mW (22586) : Read failed[0m
+[0;33mW (22616) : Read failed[0m
+[0;33mW (22646) : Read failed[0m
+[0;33mW (22676) : Read failed[0m
+[0;33mW (22706) : Read failed[0m
+[0;33mW (22736) : Read failed[0m
+[0;33mW (22766) : Read failed[0m
+[0;33mW (22796) : Read failed[0m
+[0;33mW (22826) : Read failed[0m
+[0;33mW (22856) : Read failed[0m
+[0;33mW (22886) : Read failed[0m
+[0;33mW (22916) : Read failed[0m
+[0;33mW (22946) : Read failed[0m
+[0;33mW (22976) : Read failed[0m
+[0;33mW (23006) : Read failed[0m
+[0;33mW (23036) : Read failed[0m
+[0;33mW (23066) : Read failed[0m
+[0;33mW (23096) : Read failed[0m
+[0;33mW (23126) : Read failed[0m
+[0;33mW (23156) : Read failed[0m
+[0;33mW (23186) : Read failed[0m
+[0;33mW (23216) : Read failed[0m
+[0;33mW (23246) : Read failed[0m
+[0;33mW (23276) : Read failed[0m
+[0;33mW (23306) : Read failed[0m
+[0;33mW (23336) : Read failed[0m
+[0;33mW (23366) : Read failed[0m
+[0;33mW (23396) : Read failed[0m
+[0;33mW (23426) : Read failed[0m
+[0;33mW (23456) : Read failed[0m
+[0;33mW (23486) : Read failed[0m
+[0;33mW (23516) : Read failed[0m
+[0;33mW (23546) : Read failed[0m
+[0;33mW (23576) : Read failed[0m
+[0;33mW (23606) : Read failed[0m
+[0;33mW (23636) : Read failed[0m
+[0;33mW (23666) : Read failed[0m
+[0;33mW (23696) : Read failed[0m
+[0;33mW (23726) : Read failed[0m
+[0;33mW (23756) : Read failed[0m
+[0;33mW (23786) : Read failed[0m
+[0;33mW (23816) : Read failed[0m
+[0;33mW (23846) : Read failed[0m
+[0;33mW (23876) : Read failed[0m
+[0;33mW (23906) : Read failed[0m
+[0;33mW (23936) : Read failed[0m
+[0;33mW (23966) : Read failed[0m
+[0;33mW (23996) : Read failed[0m
+[0;33mW (24026) : Read failed[0m
+[0;33mW (24056) : Read failed[0m
+[0;33mW (24086) : Read failed[0m
+[0;33mW (24116) : Read failed[0m
+[0;33mW (24146) : Read failed[0m
+[0;33mW (24176) : Read failed[0m
+[0;33mW (24206) : Read failed[0m
+[0;33mW (24236) : Read failed[0m
+[0;33mW (24266) : Read failed[0m
+[0;33mW (24296) : Read failed[0m
+[0;33mW (24326) : Read failed[0m
+[0;33mW (24356) : Read failed[0m
+[0;33mW (24386) : Read failed[0m
+[0;33mW (24416) : Read failed[0m
+[0;33mW (24446) : Read failed[0m
+[0;33mW (24476) : Read failed[0m
+[0;33mW (24506) : Read failed[0m
+[0;33mW (24536) : Read failed[0m
+[0;33mW (24566) : Read failed[0m
+[0;33mW (24596) : Read failed[0m
+[0;33mW (24626) : Read failed[0m
+[0;33mW (24656) : Read failed[0m
+[0;33mW (24686) : Read failed[0m
+[0;33mW (24716) : Read failed[0m
+[0;33mW (24746) : Read failed[0m
+[0;33mW (24776) : Read failed[0m
+[0;33mW (24806) : Read failed[0m
+[0;33mW (24836) : Read failed[0m
+[0;33mW (24866) : Read failed[0m
+[0;33mW (24896) : Read failed[0m
+[0;33mW (24926) : Read failed[0m
+[0;33mW (24956) : Read failed[0m
+[0;33mW (24986) : Read failed[0m
+[0;33mW (25016) : Read failed[0m
+[0;33mW (25046) : Read failed[0m
+[0;33mW (25076) : Read failed[0m
+[0;33mW (25106) : Read failed[0m
+[0;33mW (25136) : Read failed[0m
+[0;33mW (25166) : Read failed[0m
+[0;33mW (25196) : Read failed[0m
+[0;33mW (25226) : Read failed[0m
+[0;33mW (25256) : Read failed[0m
+[0;33mW (25286) : Read failed[0m
+[0;33mW (25316) : Read failed[0m
+[0;33mW (25346) : Read failed[0m
+[0;33mW (25376) : Read failed[0m
+[0;33mW (25406) : Read failed[0m
+[0;33mW (25436) : Read failed[0m
+[0;33mW (25466) : Read failed[0m

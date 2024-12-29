@@ -1,0 +1,7 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "i2c_api.h": "c",
+        "ssd1306_driver.h": "c"
+    }
+}
